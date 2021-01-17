@@ -21,11 +21,11 @@
               />
             </a>
 
-            <p class="desktop-only text-small">107 posts</p>
+            <!-- <p class="desktop-only text-small">107 posts</p>
 
-            <p class="desktop-only text-small">23 threads</p>
+            <p class="desktop-only text-small">23 threads</p> -->
 
-            <span class="online desktop-only">online</span>
+            <!-- <span class="online desktop-only">online</span> -->
           </div>
 
           <div class="post-content">
