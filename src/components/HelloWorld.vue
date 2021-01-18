@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <div
+  <div class="col-full">
+    <h1>Welcome to the Forum</h1>
+    <ThreadList :threads="this.threads" />
+    <!-- <div
       v-for="thread in threads"
       v-bind:key="thread.threadId"
       class="col-large push-top"
@@ -21,11 +23,11 @@
               />
             </a>
 
-            <!-- <p class="desktop-only text-small">107 posts</p>
+            <p class="desktop-only text-small">107 posts</p>
 
-            <p class="desktop-only text-small">23 threads</p> -->
+            <p class="desktop-only text-small">23 threads</p>
 
-            <!-- <span class="online desktop-only">online</span> -->
+            <span class="online desktop-only">online</span>
           </div>
 
           <div class="post-content">
@@ -65,18 +67,22 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import sourceData from "@/data";
+import ThreadList from "./ThreadList";
 console.log(sourceData);
 export default {
   name: "HelloWorld",
+  components: {
+    ThreadList,
+  },
   data() {
     return {
-      threads: sourceData.threads,
+      threads: Object.values(sourceData.threads),
       posts: sourceData.posts,
       users: sourceData.users,
     };
