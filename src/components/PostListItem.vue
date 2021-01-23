@@ -52,12 +52,8 @@
 </template>
 
 <script>
-import AppDate from "./AppDate";
 import sourceData from "@/data";
 export default {
-  components: {
-    AppDate,
-  },
   props: {
     post: {
       required: true,
