@@ -8,7 +8,7 @@
       <a href="#">
         <img class="avatar-large" :src="user.avatar" alt="" />
       </a>
-      <p class="desktop-only text-small">{{ userPostsCount }}</p>
+      <p class="desktop-only text-small">{{ userPostsCount }} posts</p>
 
       <p class="desktop-only text-small">23 threads</p>
 
